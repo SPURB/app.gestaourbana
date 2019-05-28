@@ -1,0 +1,5 @@
+{
+	mutation addConsulta ($consulta: Object!) {
+		addConsulta(consulta: $consulta) @client
+	}
+}

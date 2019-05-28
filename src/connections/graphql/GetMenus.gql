@@ -1,0 +1,19 @@
+query {
+	menus {
+		edges {
+			node {
+				name,
+				id,
+				menuItems {
+					edges {
+						node {
+						menuItemId,
+						label,
+						url
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,27 +1,23 @@
 <template>
 	<div class='NavMenu'>
-		<ApolloQuery :query="query">
 
-			<template slot-scope='{ result: { loading, error, data } }'>
-				<span v-if='error'>error</span>
-				<span v-if='loading'>loading</span>
-				<section v-else>
-					<p>{{ data }}</p>
-				</section>
+		<ApolloQuery
+			:query="require('../connections/graphql/GetMenuPrimary.gql')"
+			:variables="{ id: 'TWVudTo1MzU=' }"
+		>
+			<template slot-scope="{ result: { error, data } }">
+				<div v-if="error" class="error">...erro no menu :( {{ error }}</div>
+				<div v-else-if="data" class="result">{{ data.menu }}</div>
+				<div v-else class="loading">...carregando menu...</div>
 			</template>
-
 		</ApolloQuery>
 	</div>
 </template>
-
 <script>
-import { GET_MENU_PRIMARY } from '../queries'
-
 export default {
 	name: 'NavMenu',
 	data () {
 		return {
-			query: GET_MENU_PRIMARY
 		}
 	}
 }

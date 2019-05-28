@@ -1,0 +1,37 @@
+query GetMenuPrimary ($id: ID!) {
+	menu (id: $id) {
+		name,
+		menuItems {
+			edges {
+				node {
+					label,
+					url,
+					childItems {
+						edges {
+							node {
+								label,
+								url,
+								childItems {
+									edges {
+										node {
+											label,
+											url,
+											childItems {
+												edges {
+													node {
+														label,
+														url
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

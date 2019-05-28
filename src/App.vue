@@ -8,6 +8,7 @@
 import NavMenu from '@/components/NavMenu'
 
 export default {
+	name: 'gestaourbana',
 	$el: '#gestaourbana',
 	components: {
 		NavMenu
