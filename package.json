@@ -15,9 +15,9 @@
     "vue-router": "3.0.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.8.0",
-    "@vue/cli-plugin-eslint": "3.8.0",
-    "@vue/cli-service": "3.8.0",
+    "@vue/cli-plugin-babel": "4.2.3",
+    "@vue/cli-plugin-eslint": "4.2.3",
+    "@vue/cli-service": "4.2.3",
     "@vue/eslint-config-standard": "4.0.0",
     "apollo-boost": "^0.4.0",
     "babel-eslint": "10.0.1",
