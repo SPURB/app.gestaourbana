@@ -24,7 +24,7 @@
     "eslint": "5.16.0",
     "eslint-plugin-graphql": "^3.0.3",
     "eslint-plugin-vue": "5.2.2",
-    "graphql-tag": "2.10.1",
+    "graphql-tag": "2.12.7",
     "node-sass": "4.12.0",
     "sass-loader": "7.1.0",
     "vue-cli-plugin-apollo": "0.20.0",
